@@ -165,6 +165,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 100%;
     padding: 30px 5%;
     text-transform: capitalize
 }
