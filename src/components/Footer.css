@@ -1,0 +1,97 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .left-footer{
+    flex-basis: 33.3%;
+}
+
+.footer .left-footer h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.footer .left-footer h3 a {
+  color: var(--redColor) !important;
+}
+
+.footer .left-footer p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+.footer .center-footer {
+    flex-basis: 38.3%;
+}
+
+.footer .center-footer h3  {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer .center-footer ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.footer .right-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.3%;
+    text-align: center;
+}
+
+.footer .right-footer h3  {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer .right-footer ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer .right-footer a {
+    color: var(--whiteColor) !important;
+    transition: all 0.5s ease;
+}
+
+.footer .right-footer a:hover {
+    color: var(--redColor) !important ;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--redColor);
+}
+
+.copyright p {
+    font-size: 1rem;
+    font-weight: 700;
+}

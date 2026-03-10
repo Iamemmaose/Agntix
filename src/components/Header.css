@@ -1,0 +1,50 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--whiteColor);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 5%;
+    z-index: 1000;
+    
+}
+
+.logo {
+   cursor: pointer;
+}
+
+.logo  h1 {
+     font-size: 1.5rem;
+     font-weight: 700;
+     text-transform: uppercase;
+}
+
+.logo span {
+    color: var(--redColor);
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+li {
+    margin-left: 40px;
+}
+
+.navigation button {
+    text-transform: capitalize;
+    margin-left: 40px;
+}
