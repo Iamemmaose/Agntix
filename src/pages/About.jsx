@@ -13,7 +13,7 @@ export default function About() {
             </div>
             <section className="about-page">
 
-                <SectionCard title="about our studio" subTitle="we're a creative didgital studio" image1="https://wp.aqlova.com/agntix/creative-agency/wp-content/uploads/sites/5/2025/04/about-us-2-2.jpg" image2="https://wp.aqlova.com/agntix/creative-agency/wp-content/uploads/sites/5/2025/05/about-1-1.jpg" content="We have been creating digital products & providing design support to ambitious startups & corporations since 2016." content2="As an award-winning agency with in the digital jungle, agntix® transcends aesthetics, crafting your vision into a legacy that endures." />
+                <SectionCard title="about our studio" subTitle="we're a creative digital studio" image1="https://wp.aqlova.com/agntix/creative-agency/wp-content/uploads/sites/5/2025/04/about-us-2-2.jpg" image2="https://wp.aqlova.com/agntix/creative-agency/wp-content/uploads/sites/5/2025/05/about-1-1.jpg" content="We have been creating digital products & providing design support to ambitious startups & corporations since 2016." content2="As an award-winning agency with in the digital jungle, agntix® transcends aesthetics, crafting your vision into a legacy that endures." />
 
                 <div className="about-brand">
                     <ul className="service-name">

@@ -31,3 +31,29 @@
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
     background-size: 300%;
 }
+
+@media (max-width: 1024px) {
+    .product-card {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        flex-basis: 100%;
+        max-width: 100%;
+        min-height: 260px;
+        border-radius: 20px;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .product-card h3 {
+        font-size: 1.25rem;
+        line-height: 28px;
+    }
+
+    .product-card p {
+        font-size: 0.85rem;
+    }
+}

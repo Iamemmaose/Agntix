@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.footer .left-footer{
+.footer .left-footer {
     flex-basis: 33.3%;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .footer .left-footer h3 a {
-  color: var(--redColor) !important;
+    color: var(--redColor) !important;
 }
 
 .footer .left-footer p {
@@ -33,7 +33,7 @@
     flex-basis: 33.3%;
 }
 
-.footer .center-footer h3  {
+.footer .center-footer h3 {
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -53,7 +53,7 @@
     text-align: center;
 }
 
-.footer .right-footer h3  {
+.footer .right-footer h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 20px;
@@ -71,7 +71,7 @@
 }
 
 .footer .right-footer a:hover {
-    color: var(--redColor) !important ;
+    color: var(--redColor) !important;
 }
 
 .copyright {
@@ -94,4 +94,72 @@
 .copyright p {
     font-size: 1rem;
     font-weight: 700;
+}
+
+@media (max-width: 992px) {
+    .footer {
+        padding: 24px 4%;
+    }
+
+    .footer .left-footer,
+    .footer .center-footer,
+    .footer .right-footer {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 18px;
+    }
+
+    .footer .left-footer h3,
+    .footer .center-footer h3,
+    .footer .right-footer h3 {
+        font-size: 2.2rem;
+    }
+
+    .footer .left-footer p,
+    .footer .center-footer ul,
+    .footer .right-footer ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        font-size: 0.95rem;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 4%;
+    }
+
+    .copyright h4,
+    .copyright p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 3%;
+    }
+
+    .footer .right-footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .copyright {
+        padding: 16px 3%;
+    }
+
+    .copyright h4,
+    .copyright p {
+        font-size: 1rem;
+    }
 }

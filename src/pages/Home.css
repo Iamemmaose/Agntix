@@ -124,7 +124,7 @@
 }
 
 .dna-content .content-head h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--redColor);
     text-transform: uppercase;
@@ -188,3 +188,113 @@
     flex-direction: column;
     padding: 30px 5%;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 25px 5%;
+    }
+
+    .homeContent {
+        max-width: 100%;
+    }
+
+    .homeContent h1 {
+        font-size: 4rem;
+    }
+
+    .homeContent h2 {
+        font-size: 1.8rem;
+    }
+
+    .image {
+        max-width: 100%;
+    }
+
+    .image .imgbox {
+        width: 100%;
+        max-width: 640px;
+        height: auto;
+    }
+
+    .image .imgbox img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .dna-container,
+    .project-box,
+    .expert-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dna-container .dna-content,
+    .project-box > * {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .team-container,
+    .expertise,
+    .project,
+    .dna {
+        padding: 24px 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        align-items: center;
+        text-align: center;
+    }
+
+    .homeContent h1 {
+        font-size: 3rem;
+    }
+
+    .homeContent h2 {
+        font-size: 1.4rem;
+    }
+
+    .homeContent p {
+        font-size: 0.95rem;
+    }
+
+    .homeContent button {
+        margin: 10px 8px 0 0;
+        width: calc(50% - 8px);
+        min-width: 130px;
+    }
+
+    .dna-container .dna-content,
+    .project-box > *,
+    .expert-container > * {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .dna-content .content-head h3 {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+
+    .image .imgbox {
+        max-width: 100%;
+    }
+
+    .project-box {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .expert-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+

@@ -13,6 +13,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 600px;
+    max-width: 100%;
     margin: 50px auto;
     padding: 20px;
 }
@@ -37,4 +38,45 @@ textarea {
 textarea {
     height: 150px;
     resize: none;
+}
+
+@media (max-width: 1024px) {
+    .contact-container {
+        padding: 24px 4%;
+    }
+
+    form {
+        width: 100%;
+        max-width: 700px;
+        padding: 18px;
+        margin: 40px auto;
+    }
+
+    input,
+    textarea {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 18px 3%;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 14px;
+        margin: 20px auto;
+    }
+
+    input,
+    textarea {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    textarea {
+        height: 130px;
+    }
 }

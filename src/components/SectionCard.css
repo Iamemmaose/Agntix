@@ -80,8 +80,31 @@
 img:hover {
   transform: translateY(10px);
 }
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
 
+    .section-content .imgbox,
+    .section-content .content,
+    .section-content .imgbox2 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
 
+    .section-content .imgbox img,
+    .section-content .imgbox2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .section-content .content {
+        text-align: center;
+    }
+}
 .title {
     text-align: center;
     max-width: 600px;
@@ -93,6 +116,44 @@ img:hover {
     font-size: 4rem;
     text-transform: uppercase;
     line-height: 55px;
+}
+
+@media (max-width: 1024px) {
+    .section-title h3 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title h3 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .section-title {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        max-width: 100%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .title p {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
 }
 
 .title p {

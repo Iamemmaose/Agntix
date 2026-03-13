@@ -16,13 +16,14 @@
     max-width: 25%;
 }
 
-
 .team-photo img {
+    width: 100%;
     max-width: 100%;
     height: auto;
     object-fit: cover;
     object-position: center;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 
 .team-photo img:hover {
@@ -40,6 +41,7 @@
     text-align: center;
     color: var(--whiteColor);
     width: 100%;
+    max-width: 100%;
 }
 
 .team-name h3 {
@@ -50,4 +52,71 @@
 .team-name p {
     font-size: 1rem;
     font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .team-board {
+        gap: 16px;
+    }
+
+    .team-photo {
+        flex-basis: 33%;
+        max-width: 33%;
+    }
+
+    .team-name {
+       display: none;
+    }
+
+    .team-name h3 {
+        font-size: 1.25rem;
+    }
+
+    .team-name p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-board {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .team-photo {
+        flex-basis: 40%;
+        max-width: 100%;
+    }
+
+    .team-name {
+       display: none;
+    }
+
+    .team-name h3 {
+        font-size: 1.1rem;
+    }
+
+    .team-name p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-photo {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .team-name {
+        display: none;
+    }
+
+    .team-name h3 {
+        font-size: 1rem;
+    }
+
+    .team-name p {
+        font-size: 0.8rem;
+    }
 }
